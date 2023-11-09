@@ -1,0 +1,189 @@
+/* Estilos generales */
+* {
+    font-family: Verdana;
+    color: darkslategray;
+    transition: all 0.5s ease !important;
+}
+
+::selection {
+    background-color: #3e4242;
+    color: rgb(112, 228, 228);
+}
+
+.hijosCentrados {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.paginaActual {
+    font-size: 18px;
+    color: #3e4242;
+    text-decoration: none;
+}
+
+.mensajeError {
+    margin: 5px 0 20px 0;
+    font-size: 18px;
+    color: red;
+}
+
+header, footer {
+    padding: 25px;
+    background-color: #86cfce;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header > *, footer > * {
+    width: fit-content !important;
+}
+
+i {
+    transition: 0.3 ease-in all;
+}
+
+
+/* Títulos */
+.tituloPagina {
+    margin-bottom: 22px;
+    font-family: Typewriter;
+    font-size: 21px;
+    color: #3e4242;
+    user-select: none;
+}
+
+.tituloEnlaces {
+    font-size: 20px;
+    color: rgb(11, 58, 40);
+    user-select: none;
+}
+
+.tituloInfo {
+    font-size: 22px;
+    color: #384141;
+}
+
+
+/* Enlaces */
+.enlace {
+    margin: 0 2.5px 0 2.5px;
+    color: #3e4242;
+    text-decoration: none;
+}
+
+.enlace:hover {
+    color: rgb(11, 150, 97);
+    cursor: pointer;
+}
+
+.enlaceCabecera {
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.enlaceCabecera:hover {
+    color: #3e4242;
+}
+
+.enlaceNoEnlace {
+    text-decoration: none;
+}
+
+
+/* Scrollbar de las páginas */
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    padding: 5px;
+    background-color: #798f91;
+    border: 1px solid #59686b;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    border: 1px solid rgba(147, 183, 212, 0.404);
+    border-radius: 10px;
+}
+
+
+/* Cabecera */
+header {
+    padding: 15px 5px 15px 5px;
+    border-bottom: 1px solid #78a7b3;
+}
+
+#titulo {
+    font-family: Typewriter;
+    font-size: 24px;
+    color: black;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#iconoUsu {
+    width: 45px;
+    height: 44px;
+}
+
+#opcionesUsu {
+    display: none;
+    position: absolute;
+    right: 2%;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    text-align: center;
+    background-color: #42b7c2;
+    border: 1px solid #5cb6bebd;
+    box-shadow: 1px 1px 10px gray;
+}
+
+#sesionUsu:hover > #opcionesUsu {
+    display: block;
+}
+
+#cerrarSesion:hover {
+    cursor: pointer;
+}
+
+
+/* Barra de menú */
+#menu {
+    padding: 10px;
+    background-color: #42b7c2;
+    text-align: center;
+}
+
+
+/* Pie de página */
+footer {
+    margin-top: 10px;
+    border-top: 1px solid #85b4c0;
+    box-shadow: 1px 1px 15px black;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+/*----- FUENTES -----*/
+/* Fuente del título */
+@font-face {
+    font-family: "Typewriter";
+    src: url("../../fonts/AniTypewriter.ttf");
+}
+
+/* Prueba */
+@font-face {
+    font-family: "Funky Robot";
+    src: url("../../fonts/Robo Funk.ttf");
+}
+
+
+/*----- MEDIA QUERIES -----*/
+/* Media query para el mínimo de X y el máximo de X*/
+@media screen and (min-width: X) and (max-width: X) {}

@@ -1,0 +1,19 @@
+{
+  "name": "insight-bot",
+  "version": "1.0.0",
+  "description": "Chatbot interactivo",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rafamarcoalfonso@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "cleverbot-free": "^1.1.12",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.10.0",
+    "multer": "^1.4.5-lts.1"
+  }
+}

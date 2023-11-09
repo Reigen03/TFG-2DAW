@@ -1,0 +1,211 @@
+/* Cuerpo */
+#chatArea {
+    width: auto;
+    height: fit-content;
+    max-height: calc(100% - 25px);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Cabecera */
+#cabeceraInicio {
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 15px black;
+}
+
+
+/* Chat */
+#chat {
+    width: 65%;
+    height: 443px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+#chat::-webkit-scrollbar {
+    width: 10px;
+}
+
+#chat::-webkit-scrollbar-thumb {
+    padding: 5px;
+    border: 1px solid #f1ddf1;
+    border-radius: 10px;
+    background-color: #f1ddf1;
+}
+
+#chat::-webkit-scrollbar-track {
+    border: 1px solid rgba(214, 209, 209, 0.404);
+    border-radius: 10px;
+}
+
+
+/* Bloques de mensajes */
+.msg {
+    width: fit-content;
+    height: fit-content;
+    max-width: 550px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msgBot {
+    align-self: flex-start;
+    flex-direction: row;
+}
+
+.msgUsu {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.img {
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    animation-name: aparicionImg;
+    animation-duration: 0.25s;
+    animation-timing-function: ease;
+}
+
+.imgBot {
+    background-image: url("../../img/misc/logo.png");
+}
+
+.imgUsu {
+    border-radius: 400px;
+}
+
+.txt {
+    padding: 12.5px;
+    max-width: 450px;
+    border-radius: 10px;
+    animation-name: aparicionMensaje;
+    animation-duration: 0.20s;
+    animation-timing-function: ease;
+    overflow-wrap: break-word;
+}
+
+.txtBot {
+    background-color: rgb(82, 240, 153);
+}
+
+.txtUsu {
+    background-color: #8ee9e7;
+}
+
+
+/* Circulos que indican que el bot está escribiendo */
+#circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+  
+.circulillo {
+    width: 12.5px;
+    height: 12.5px;
+    margin: 2.5px;
+    border-radius: 50%;
+    background-color: #AFA9A9;
+    animation-name: escribiendo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+  
+#c1 {
+    animation-delay: 0.25s
+}
+  
+#c2 {
+    animation-delay: 0.5s
+}
+  
+#c3 {
+    animation-delay: 0.75s
+}
+
+
+/* Input para escribir y botón */
+#text {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text > * {
+    padding: 10px;
+    border: 1px solid #8b8989;
+    border-radius: 10px;
+}
+
+#cuadroTexto {
+    width: 50%;
+    height: fit-content;
+    margin-right: 5px;
+}
+
+#cuadroTexto:hover {
+    border-color: black;
+}
+
+#btnTexto {
+    margin-left: 5px;
+}
+
+#btnTexto:hover {
+    border-color: rgb(101, 190, 231);
+    background-color: rgb(101, 190, 231);
+    cursor: pointer;
+}
+
+
+/*----- ANIMACIONES -----*/
+/* Animación de cuando el bot está escribiendo */
+@keyframes escribiendo {
+    from {
+      filter: opacity(0.75);
+    }
+    
+    to {
+      filter: opacity(0.15);
+    }
+}
+
+/* Animación de aparición de imagen del bot y usuario */
+@keyframes aparicionImg {
+    from {
+        filter: opacity(0);
+    }
+
+    to {
+        filter: opacity(1);
+    }
+}
+
+/* Animación de cuando el mensaje se ha enviado y se muestra por pantalla. */
+@keyframes aparicionMensaje {
+    from {
+        font-size: xx-small;
+        padding: 0px;
+    }
+
+    to {
+        font-size: medium;
+    }
+}

@@ -1,0 +1,67 @@
+/* Cuerpo */
+.cuerpoRegistro {
+    padding: 15px 15px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpoRegistro > div {
+    width: fit-content !important;
+    text-align: center;
+}
+
+
+/* Formulario de registro */
+.formulario {
+    padding: 0 25px 25px 25px;
+}
+
+.labelUsu, .inputUsu {
+    width: 325px;
+}
+
+.labelUsu {
+    font-size: 16px;
+    color: rgb(36, 32, 32);
+    text-align: left;
+    user-select: none;
+}
+
+.inputUsu {
+    padding: 10px;
+    margin-top: 2px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.btnUsu {
+    width: 100px;
+    padding: 5px;
+}
+
+.inputUsu, .btnUsu {
+    border: 1px solid rgba(84, 102, 102, 0.747);
+    border-radius: 10px;
+}
+
+.inputUsu:hover, .btnUsu:hover {
+    background-color: #caeeee;
+    border-color: #9bcaca;
+}
+
+#imgFormularioLogin {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translate(-60%, -45%);
+    z-index: 1000;
+}
+
+#imgFormularioLogin > img {
+    width: 50%;
+    height: 50%;
+}

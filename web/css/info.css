@@ -1,0 +1,60 @@
+/* Cuerpo */
+#areaInfo {
+    padding: 10px 35px 10px 35px;
+    margin: 25px 10px 25px 10px;
+    border-radius: 20px;
+    box-shadow:0px 1px 2px #eee, 0px 1px 3px #eee, 0px 2px 3px #e9e9e9, 0px 2px 5px #e9e9e9, 0px 3px 5px #ccc, 0px 4px 6px #c9c9c9, 0px 5px 2px #bbb, 0px 6px 2px #b1b9b9, 0px 7px 2px #999, 0px 7px 2px rgba(0,0,0,0.5), 0px 7px 2px rgba(0,0,0,0.1), 0px 7px 2px rgba(0,0,0,0.73), 0px 0px 5px rgba(255,255,255,0.3), 0px 0px 6px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,1), 0px 0px 5px rgba(255,255,255,0.1);
+    overflow-wrap: break-word;
+}
+
+.bloqueInfo {
+    margin: 25px 0 25px 0;
+}
+
+
+/* Enlaces */
+.enlaceInfo {
+    color: rgb(11, 152, 98);
+    text-decoration: none;
+}
+
+.enlaceInfo:hover {
+    color: rgb(11, 152, 98);
+    text-decoration: underline;
+}
+
+
+/* Parte de redes sociales */
+#redes {
+    margin: 55px 0 20px 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.iconoRed {
+    margin: 0 25px 0 25px;
+    width: fit-content;
+}
+
+#iconoYoutube:hover > a > i {
+    color: #eb2d14;
+}
+
+#iconoFacebook:hover > a > i {
+    color: #3b5998;
+}
+
+#iconoTwitter:hover > a > i {
+    color: #1da1f2;
+}
+
+#iconoLinkedin:hover > a > i {
+    color: #0f52e4;
+}
+
+#iconoInstagram:hover > a > i {
+    color: #c32aa3;
+}
